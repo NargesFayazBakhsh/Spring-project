@@ -1,0 +1,6 @@
+@PostMapping("/register")
+public Sting registerUser(
+
+LocalDate today = LocalDate.now();
+int age = today.getYear()-user.getDateOfBirth().getYear();
+if (age<18 && (user.getParentPhoneNumber() == null || user.getParentPhoneNumber().isEmpty()))
